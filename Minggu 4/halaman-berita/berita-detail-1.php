@@ -23,10 +23,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav d-flex gap-3">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../dashboard-berita.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.php">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../about.php">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../contact.php">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../dashboard-berita.php">News</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,7 +35,7 @@
 
     <!-- Section untuk konten berita -->
     <section class="detail-body container mt-4">
-        <a href="../dashboard-berita.html" class="link-dark link-underline link-underline-opacity-0 p-0 fs-4">
+        <a href="../dashboard-berita.php" class="link-dark link-underline link-underline-opacity-0 p-0 fs-4">
             <i class="bi bi-arrow-left px-1 pe-2 rounded-end fs-4">Back to Dashboard</i>
         </a>
         <h1 class="text-center mt-5">Penyebab Macet Horor Puncak Bogor Terungkap: Motor Melambung, Volume Kendaraan

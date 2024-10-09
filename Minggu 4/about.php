@@ -24,10 +24,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav d-flex gap-3">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="dashboard-berita.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dashboard-berita.php">News</a></li>
                     </ul>
                 </div>
             </div>
