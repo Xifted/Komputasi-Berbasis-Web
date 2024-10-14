@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>Dashboard - Berita Terkini</title>
 </head>
 
@@ -21,9 +21,9 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav d-flex gap-3">
-                        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.php">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../about.php">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../kontak.php">Contact Us</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">News</a></li>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@
                 <h2>Penyebab Macet Horor Puncak Bogor Terungkap: Motor Melambung, Volume Kendaraan 391.142</h2>
                 <p>Kemacetan horor di Jalur Puncak Bogor, Jawa Barat, saat libur panjang 14-16 September 2024 disebabkan
                     volume kendaraan motor meningkat serta banyak yang melambung saat diberlakukan rekayasa lalulintas
-                    one way (satu arah)... <a href="halaman-berita/berita-detail-1.php">Lihat Selengkapnya</a></p>
+                    one way (satu arah)... <a href="detail-berita/berita-detail-1.php">Lihat Selengkapnya</a></p>
             </div>
         </div>
 
@@ -56,7 +56,7 @@
                 <h2>Tak Diberi Kompensasi Rp 1,36 M, Ojek Pangkalan di Bandung Ancam Kembali Tolak Ojol</h2>
                 <p>Perkumpulan ojek pangkalan (opang) Pasir Impun, Kota Bandung, Jawa Barat, mengancam akan kembali
                     mengambil tindakan jika pemerintah dan operator ojek online (ojol) menolak membayar biaya kompensasi
-                    sebesar Rp 10 juta... <a href="halaman-berita/berita-detail-2.php">Lihat Selengkapnya</a></p>
+                    sebesar Rp 10 juta... <a href="detail-berita/berita-detail-2.php">Lihat Selengkapnya</a></p>
             </div>
         </div>
 
@@ -69,7 +69,7 @@
                 <h2>Tim Labfor Selidiki Sumber Kebakaran Pasar Comboran Malang</h2>
                 <p>Tim Bidang Laboratorium Forensik Polda Jatim melakukan olah Tempat Kejadian Perkara (TKP) kebakaran
                     di lantai 3 Pasar Baru Barat, kawasan Comboran, Kota Malang, Jawa Timur, pada Selasa (17/9/2024)...
-                    <a href="halaman-berita/berita-detail-3.php">Lihat Selengkapnya</a>
+                    <a href="detail-berita/berita-detail-3.php">Lihat Selengkapnya</a>
                 </p>
             </div>
         </div>

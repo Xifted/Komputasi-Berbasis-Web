@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
     <title>Tak Diberi Kompensasi Rp 1,36 M, Ojek Pangkalan di Bandung Ancam Kembali Tolak Ojol</title>
 </head>
 
@@ -22,9 +22,9 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav d-flex gap-3">
-                        <li class="nav-item"><a class="nav-link" href="../index.php">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../about.php">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../contact.php">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../index.php">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../about.php">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../kontak.php">Contact Us</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="../dashboard-berita.php">News</a></li>
                     </ul>
                 </div>

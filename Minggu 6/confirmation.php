@@ -21,8 +21,8 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav d-flex gap-3">
                         <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="kontak.php">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="kontak.php">Contact Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="halaman-berita/dashboard-berita.php">News</a></li>
                     </ul>
                 </div>
@@ -30,13 +30,15 @@
         </nav>
     </header>
     <section class="container mt-5">
-        <h1 class="border-bottom border-2" style="width: max-content;">Confirmation</h1>
+        <h1 class="border-bottom border-2" style="width: max-content;">Data Berhasil Disimpan!</h1>
 
         <?php
+        include 'koneksi.php';
+
         $name = htmlspecialchars($_POST['fName']);
         $email = htmlspecialchars($_POST['email']);
         $hobbies = isset($_POST['hobby']) ? $_POST['hobby'] : [];
-        $gender = htmlspecialchars($_POST['gender'] == "male" ? "Laki - Laki" : "Perempuan");
+        $gender = htmlspecialchars($_POST['gender']);
         $birthDate = htmlspecialchars($_POST['fBirth']);
 
         echo "<p><strong>Nama:</strong> $name</p>";
@@ -46,11 +48,28 @@
         } else {
             echo "<p><strong>Hobby:</strong> None</p>";
         }
-        echo ucfirst("<p><strong>Jenis Kelamin:</strong> $gender</p>");
+        $genderString = $gender == "male" ? "Laki - Laki" : "Perempuan";
+        echo "<p><strong>Jenis Kelamin:</strong> ". $genderString ."</p>";
         echo "<p><strong>Tanggal Lahir:</strong> " . $birthDate . "</p>";
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $hobbiesString = implode(", ", $hobbies);
+            $sql = "INSERT INTO users (name, email, hobbies, gender, birthDate)
+            VALUES ('$name', '$email', '$hobbiesString', '$gender', '$birthDate')";
+
+            if ($conn->query($sql) === TRUE) {
+                echo "<script>alert('Data berhasil dimasukkan ke database!');</script>";
+            } else {
+                $error_message = $conn->error;
+                echo "<script>alert('Error: " . addslashes($error_message) . "');</script>";
+            }
+        }
+        $conn->close();
+        
         ?>
 
         <a href="kontak.php" class="btn btn-primary mt-4">Confirm</a>
+        
     </section>
 </body>
 
