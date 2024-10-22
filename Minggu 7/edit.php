@@ -15,7 +15,7 @@ if ($result->num_rows > 0) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['fName'];
     $email = $_POST['email'];
-    $hobbies = implode(',', $_POST['hobby']);
+    $hobbies = implode(', ', $_POST['hobby']);
     $gender = $_POST['gender'];
     $birthDate = $_POST['fBirth'];
 
@@ -79,15 +79,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="mb-3">
                 <label class="form-label">Hobby</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="membaca" id="hobbyReading" name="hobby[]" <?= in_array('membaca', explode(',', $row['hobbies'])) ? 'checked' : '' ?>>
+                    <input class="form-check-input" type="checkbox" value="membaca" id="hobbyReading" name="hobby[]" <?= in_array('membaca', explode(', ', $row['hobbies'])) ? 'checked' : '' ?>>
                     <label class="form-check-label" for="hobbyReading">Membaca</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="menyanyi" id="hobbySinging" name="hobby[]" <?= in_array('menyanyi', explode(',', $row['hobbies'])) ? 'checked' : '' ?>>
+                    <input class="form-check-input" type="checkbox" value="menyanyi" id="hobbySinging" name="hobby[]" <?= in_array('menyanyi', explode(', ', $row['hobbies'])) ? 'checked' : '' ?>>
                     <label class="form-check-label" for="hobbySinging">Menyanyi</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="lari" id="hobbyRunning" name="hobby[]" <?= in_array('lari', explode(',', $row['hobbies'])) ? 'checked' : '' ?>>
+                    <input class="form-check-input" type="checkbox" value="lari" id="hobbyRunning" name="hobby[]" <?= in_array('lari', explode(', ', $row['hobbies'])) ? 'checked' : '' ?>>
                     <label class="form-check-label" for="hobbyRunning">Lari</label>
                 </div>
             </div>

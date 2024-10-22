@@ -4,3 +4,7 @@ document.getElementById('select-all').onclick = function() {
         checkbox.checked = this.checked;
     }
 }
+
+$(document).ready(function() {
+    $('#dataTable').DataTable();
+});
